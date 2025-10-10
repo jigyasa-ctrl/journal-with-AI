@@ -2,6 +2,8 @@
 
 Journal with AI is a simple journaling application powered by AI, built with React and Express. Reflect on your day and receive AI-driven insights into your journal entries.
 
+<img width="1470" height="718" alt="Screenshot 2025-10-10 at 10 16 20 AM" src="https://github.com/user-attachments/assets/6903648a-ee1d-488d-87ab-8fd4b363666a" />
+
 ## Features
 
 - Beautiful, minimal UI with Tailwind CSS
