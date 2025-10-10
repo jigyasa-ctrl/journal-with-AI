@@ -2,13 +2,15 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 const port = 8000;
+const generate = require("./chatbot")
 app.use(cors())
 app.use(express.json())
 
 app.post("/journal", async (req, res) => {
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    const {input} = req.body
+    const response = await generate(input)
     res.send({
-        "message": "You are doing great yayyy!"
+        "message": response
     })
 })
 

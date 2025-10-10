@@ -24,7 +24,6 @@ function App() {
       },
       body: JSON.stringify({ input })
     }, setIsLoading)
-    console.log(response, "hello")
     if(response){
       setAiresponse(response.message)
       setIsLoading(false)
@@ -34,14 +33,14 @@ function App() {
     <div className="App min-h-screen flex flex-col items-center justify-center 
                 bg-gradient-to-br from-orange-100 via-rose-50 to-yellow-100">
       <header className="text-center mb-8">
-        <h1 className="text-5xl font-bold text-orange-500 tracking-tight mb-2">
+        <h1 className="text-[70px] font-bold text-orange-500 tracking-tight mb-2">
           Journal with <span className="text-orange-600">AI</span>
         </h1>
         <p className="text-gray-600 text-lg">
           Reflect on your day. Let AI help you find patterns in your thoughts.
         </p>
       </header>
-
+      <div className='flex flex-row justify-space-between items-center gap-20'>
       <div className="bg-white shadow-xl rounded-2xl p-8 w-[500px] max-w-[90%] transition-all hover:shadow-2xl">
         <textarea
           className="w-full h-40 border-2 border-orange-200 focus:border-orange-400 
@@ -70,8 +69,8 @@ function App() {
             <div className="w-3 h-3 bg-orange-400 rounded-full mr-3 animate-pulse"></div>
             <h3 className="text-xl font-semibold text-gray-800">AI Analysis</h3>
           </div>
-          <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-4 border border-orange-100">
-            <p className="text-gray-700 leading-relaxed text-center italic">
+          <div className="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-xl p-4 border border-orange-100 overflow-auto">
+            <p className="text-gray-700 leading-relaxed text-center italic overflow-auto h-[300px]">
               "{aiResponse}"
             </p>
           </div>
@@ -80,6 +79,7 @@ function App() {
           </div>
         </div>
       </section>}
+      </div>
 
       <footer className="mt-8 text-gray-500 text-sm">
         Your entries are private and stay on your device.
