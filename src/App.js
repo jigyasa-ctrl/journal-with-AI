@@ -16,7 +16,7 @@ function App() {
   const [aiResponse, setAiresponse] = useState("")
   const handleSubmit = async function(e) {
     setIsLoading(true)
-    let url = "http://localhost:8000/journal"
+    let url = `${process.env.REACT_APP_SERVER_URL || 'http://localhost:8000'}/journal`
     const response = await submitJournal(url, {
       method: "POST",
       headers: {
