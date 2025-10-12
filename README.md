@@ -2,6 +2,8 @@
 
 Journal with AI is a simple journaling application powered by AI, built with React and Express. Reflect on your day and receive AI-driven insights into your journal entries.
 
+Live demo -> https://eclectic-kheer-1036dc.netlify.app/
+
 
 <img width="1470" height="726" alt="Screenshot 2025-10-10 at 11 04 34 PM" src="https://github.com/user-attachments/assets/275c54bb-7290-4855-93ad-178f5e05db96" />
 
