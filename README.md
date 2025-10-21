@@ -1,6 +1,6 @@
 # Journal with AI
 
-Journal with AI is a simple journaling application powered by AI, built with React and Express. Reflect on your day and receive AI-driven insights into your journal entries
+Journal with AI is a simple journaling application powered by AI, built with React and Express. Reflect on your day and receive AI-driven insights into your journal entries.
 
 Live demo -> https://journal-with-ai.netlify.app/
 
